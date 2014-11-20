@@ -94,6 +94,8 @@ $jobby->add('ClosureExample', array(
     // Commands can be PHP closures
     'command' => function() {
         echo "I'm a function!\n";
+        // if not returned true it's generate an error
+        return true;
     },
 
     // This function will run every other hour
